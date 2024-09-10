@@ -28,4 +28,39 @@ const DESCRIPTIONS = [
   'рисунок'
 ];
 
-export {MESSAGES, NAMES, DESCRIPTIONS};
+//export {MESSAGES, NAMES, DESCRIPTIONS};
+
+const getRandomN = (a, b) => {
+  const lower = Math.ceil(Math.min(Math.abs(a), Math.abs(b)));
+  const upper = Math.floor(Math.max(Math.abs(a), Math.abs(b)));
+  const result = Math.random() * (upper - lower + 1) + lower;
+  return Math.floor(result);
+};
+
+const getRandom = (min, max) => {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+const getRandomElement = (elements) => elements[getRandomN(0, elements.length - 1)];
+
+const getRandomInteger = () => Math.floor(Math.random() * 100);
+
+//export {getRandomN, getRandom, getRandomElement, getRandomInteger};
+const createDescription = () => ({
+  id: getRandom(1, 25),
+  url: `photos/${ getRandom(1, 25) }.jpg`,
+  description: getRandomElement(DESCRIPTIONS),
+  likes: getRandom(15, 200),
+  comments: {
+    id: getRandomInteger(),
+    avatar: `img/avatar-${ getRandom(1, 6) }.svg`,
+    message: getRandomElement(MESSAGES),
+    name: getRandomElement(NAMES),
+  }
+});
+
+const typicalDescriptions = Array.from({length: 25}, createDescription);
+/* eslint-disable no-console */
+console.log(typicalDescriptions);

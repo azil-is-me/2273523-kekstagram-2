@@ -1,12 +1,12 @@
-import {getRandom, getRandomElement, getRandomInt} from './random-number-generator';
-import {DESCRIPTIONS, MESSAGES, NAMES} from './list-of-names';
+import {getRandom, getRandomElement, getRandomInteger} from './random-number-generator';
+import {DESCRIPTION, MESSAGES, NAMES} from './list-of-names';
 const createDescription = () => ({
   id: getRandom(1, 25),
   url: `photos/${ getRandom(1, 25) }.jpg`,
-  description: getRandomElement(DESCRIPTIONS),
+  description: getRandomElement(DESCRIPTION),
   likes: getRandom(15, 200),
   comments: {
-    id: getRandomInt(),
+    id: getRandomInteger(),
     avatar: `img/avatar-${ getRandom(1, 6) }.svg`,
     message: getRandomElement(MESSAGES),
     name: getRandomElement(NAMES),

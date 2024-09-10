@@ -20,7 +20,7 @@ const NAMES = [
   'Лика'
 ];
 
-const DESCRIPTIONS = [
+const DESCRIPTION = [
   'пейзаж',
   'портрет',
   'еда',
@@ -28,4 +28,4 @@ const DESCRIPTIONS = [
   'рисунок'
 ];
 
-export {MESSAGES, NAMES, DESCRIPTIONS};
+export {MESSAGES, NAMES, DESCRIPTION};

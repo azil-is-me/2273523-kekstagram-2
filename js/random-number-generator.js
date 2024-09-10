@@ -13,6 +13,6 @@ const getRandom = (min, max) => {
 
 const getRandomElement = (elements) => elements[getRandomNum(0, elements.length - 1)];
 
-const getRandomInt = () => Math.floor(Math.random() * 100);
+const getRandomInteger = () => Math.floor(Math.random() * 100);
 
-export {getRandomNum, getRandom, getRandomElement, getRandomInt};
+export {getRandomNum, getRandom, getRandomElement, getRandomInteger};
