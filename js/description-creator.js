@@ -11,7 +11,7 @@ const createDescription = () => ({
     message: getRandomElement(MESSAGES),
     name: getRandomElement(NAMES),
   }
-});
+})
 
 const typicalDescriptions = Array.from({length: 25}, createDescription);
 /* eslint-disable no-console */
