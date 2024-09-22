@@ -4,7 +4,7 @@
   "private": true,
   "description": "Личный проект «Кекстаграм» от HTML Academy",
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git@github.com:htmlacademy-javascript/2273523-kekstagram-2.git"
   },
   "bugs": {
