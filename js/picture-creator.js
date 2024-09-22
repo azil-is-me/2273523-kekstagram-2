@@ -18,7 +18,7 @@ let func = () => {
   }
   // fragment.appendChild(srcRewrite);
   // return(fragment)
-  html = html + srcRewrite;
+  html = html + srcRewrite
   console.log(html)
 
 }

@@ -15,4 +15,4 @@ const getRandomElement = (elements) => elements[getRandomNum(0, elements.length 
 
 const getRandomInteger = () => Math.floor(Math.random() * 100);
 
-export {getRandomNum, getRandom, getRandomElement, getRandomInteger};
+export {getRandomNum, getRandom, getRandomElement, getRandomInteger}

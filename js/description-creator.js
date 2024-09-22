@@ -15,6 +15,6 @@ const createDescription = () => ({
 
 const typicalDescriptions = Array.from({length: 25}, createDescription);
 /* eslint-disable no-console */
-console.log(typicalDescriptions);
+console.log(typicalDescriptions)
 
 export {typicalDescriptions, createDescription};

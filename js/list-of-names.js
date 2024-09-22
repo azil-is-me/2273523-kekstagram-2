@@ -26,6 +26,6 @@ const DESCRIPTION = [
   'еда',
   'котики',
   'рисунок'
-];
+]
 
 export {MESSAGES, NAMES, DESCRIPTION};
